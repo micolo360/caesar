@@ -1391,7 +1391,7 @@ const PLAYLIST=[
   function ui(){btn.classList.toggle('on',on);btn.setAttribute('aria-pressed',on);btn.setAttribute('aria-label',on?'Pause music':'Play music');}
   function load(n){i=(n+PLAYLIST.length)%PLAYLIST.length;audio.src=PLAYLIST[i].file;}
   function play(){audio.volume=0;const p=audio.play();
-    if(p&&p.then)p.then(()=>{fails=0;on=true;ui();fade(VOL,1500);show();}).catch(err=>{if(err&&err.name==='NotAllowedError'){on=false;ui();}});}
+    if(p&&p.then)p.then(()=>{fails=0;on=true;ui();fade(VOL,1500);show();unhook();}).catch(err=>{if(err&&err.name==='NotAllowedError'){on=false;ui();started=false;}});}
   function next(){fade(0,400,()=>{load(i+1);if(on)play();});}
   audio.addEventListener('ended',()=>{load(i+1);play();});
   audio.addEventListener('error',()=>{fails++;
@@ -1403,9 +1403,15 @@ const PLAYLIST=[
   npN.addEventListener('click',()=>{if(on)next();});
   btn.addEventListener('pointerenter',()=>{if(on)show();});
   // browsers only allow sound after the visitor interacts, so start on the first click, tap or key press
-  function first(){['pointerdown','keydown','touchstart'].forEach(ev=>removeEventListener(ev,first,true));
-    if(started||wantOff)return;started=true;load(0);play();}
-  ['pointerdown','keydown','touchstart'].forEach(ev=>addEventListener(ev,first,{capture:true,passive:true}));
+  // phones only count a finished tap (not a swipe or touch-down) as permission, so keep listening until a start succeeds
+  const FIRST=['pointerdown','pointerup','touchend','click','keydown'];
+  function unhook(){FIRST.forEach(ev=>removeEventListener(ev,first,true));}
+  function first(e){if(wantOff){unhook();return;}if(on||started||(e&&e.target&&e.target.closest&&e.target.closest('#soundBtn')))return;
+    started=true;if(!audio.src)load(0);play();}
+  FIRST.forEach(ev=>addEventListener(ev,first,{capture:true,passive:true}));
+  // pause when the visitor switches tab or locks the phone, and pick up again when they come back
+  let resume=false;
+  document.addEventListener('visibilitychange',()=>{if(document.hidden){if(on){resume=true;audio.pause();}}else if(resume){resume=false;audio.play().catch(()=>{});}});
   ui();
 })();
 </script>
