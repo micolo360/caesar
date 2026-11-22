@@ -804,6 +804,185 @@ img,video,canvas{max-width:100%}
 .foot .foot-pitch{max-width:44ch;font-size:clamp(17px,1.35vw,21px);line-height:1.5;color:#3d4038;margin:0}
 .foot .foot-pitch b{color:#121410;font-weight:600}
 .logo.img{display:inline-flex;align-items:center;opacity:.9}.logo.img img{height:clamp(44px,4.6vw,66px);width:auto;display:block}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== case studies ===== */
+.cases{position:relative;padding:clamp(90px,14vh,160px) 0 clamp(90px,14vh,150px)}
+.cases .head,.how .head,.faq .head{max-width:1840px;margin:0 auto clamp(40px,6vh,70px);padding:0 var(--pad);display:grid;align-items:end;grid-template-columns:auto 1fr;gap:32px}
+.cases .head p,.how .head p,.faq .head p{justify-self:end;max-width:34ch;color:var(--muted);font-size:16px}
+.cases h2,.how h2,.faq h2{font-size:clamp(66px,9vw,150px)}
+.cases h2 span,.how h2 span,.faq h2 span{display:block;white-space:nowrap}
+.cases h2 span:last-child,.how h2 span:last-child,.faq h2 span:last-child{color:var(--sky)}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== how I work: pricing, process, tools ===== */
+.how{position:relative;padding:clamp(90px,14vh,160px) 0 clamp(80px,12vh,140px)}
+.how-grid{max-width:1840px;margin:0 auto;padding:0 var(--pad);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:clamp(14px,1.6vw,24px)}
+.price{border-radius:28px;padding:clamp(26px,2.8vw,44px);display:flex;flex-direction:column;gap:20px;background:linear-gradient(140deg,rgba(120,205,255,.26) 0%,rgba(79,184,242,.09) 45%,rgba(255,255,255,.03) 100%);box-shadow:var(--glass-edge),inset 0 0 0 1px rgba(255,255,255,.22),var(--glass-drop);-webkit-backdrop-filter:blur(18px) saturate(140%);backdrop-filter:blur(18px) saturate(140%)}
+.price .k{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--sky);font-weight:600}
+.price .amt{font-family:var(--display);font-weight:900;line-height:.8;font-size:clamp(84px,9vw,150px);margin:0}
+.price .amt small{display:block;font-family:var(--body);font-weight:500;font-size:16px;letter-spacing:0;color:var(--muted);margin-bottom:10px;text-transform:none}
+.price .amt sup{font-size:.45em;vertical-align:top;position:relative;top:.12em;color:var(--sky)}
+.price ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.price li{display:flex;gap:10px;align-items:flex-start;font-size:15px;line-height:1.45}
+.price li::before{content:"";flex:none;width:18px;height:18px;margin-top:1px;border-radius:50%;background:var(--sky) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='%2312202B' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/12px no-repeat}
+.price .also{font-size:14px;line-height:1.5;color:var(--muted);margin:0;padding-top:14px;border-top:1px solid rgba(255,255,255,.14)}
+.price .also b{color:var(--ink);font-weight:600}
+.price .btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto}
+.proc{border-radius:28px;padding:clamp(26px,2.8vw,44px);background:var(--glass);box-shadow:var(--glass-edge),var(--glass-drop);-webkit-backdrop-filter:blur(18px) saturate(140%);backdrop-filter:blur(18px) saturate(140%);display:flex;flex-direction:column;gap:clamp(20px,2.4vw,30px)}
+.proc h3,.tools h3{margin:0;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.proc ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(14px,1.6vw,22px)}
+.proc li{display:flex;flex-direction:column;gap:6px;padding:18px;border-radius:18px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.1)}
+.proc li b{font-family:var(--display);font-weight:900;font-size:30px;line-height:1;color:var(--sky)}
+.proc li strong{font-size:17px;font-weight:600}
+.proc li span{font-size:14px;line-height:1.5;color:#CFD0C8}
+.tools{display:flex;flex-direction:column;gap:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{font-size:14px;padding:8px 14px;border-radius:999px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.16);background:rgba(255,255,255,.03)}
+.tz{display:flex;gap:12px;align-items:center;font-size:14px;line-height:1.45;color:#CFD0C8;padding-top:16px;border-top:1px solid rgba(255,255,255,.1)}
+.tz svg{flex:none;color:var(--sky)}
+/* ===== FAQ ===== */
+.faq{position:relative;padding:clamp(70px,11vh,130px) 0 clamp(50px,8vh,90px)}
+.faq-list{max-width:1840px;margin:0 auto;padding:0 var(--pad);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:start}
+.faq details{border-radius:20px;background:var(--glass);box-shadow:var(--glass-edge);transition:background .3s ease}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 24px;font-size:clamp(16px,1.25vw,19px);font-weight:600;line-height:1.35}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary i{flex:none;position:relative;width:30px;height:30px;border-radius:50%;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.35);transition:transform .35s ease,background .3s ease}
+.faq summary i::before,.faq summary i::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:2px;margin:-1px 0 0 -6px;background:currentColor;border-radius:2px}
+.faq summary i::after{transform:rotate(90deg);transition:transform .35s ease}
+.faq details[open] summary i{background:var(--sky);color:#12202B;box-shadow:none}
+.faq details[open] summary i::after{transform:rotate(0)}
+.faq summary:focus-visible{outline:2px solid var(--sky);outline-offset:-2px;border-radius:20px}
+.faq details p{margin:0;padding:0 24px 22px;font-size:15px;line-height:1.6;color:#D2D3CB;max-width:62ch}
+/* reveal */
+.rv{opacity:0;transform:translateY(36px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+/* responsive */
+@media (max-width:1100px){
+  
+  
+  
+  
+  
+  
+  
+  .how-grid{grid-template-columns:1fr}
+}
+@media (max-width:900px){
+  
+  
+  .faq-list{grid-template-columns:1fr}
+  .cases .head,.how .head,.faq .head{grid-template-columns:1fr;gap:14px}
+  .cases .head p,.how .head p,.faq .head p{justify-self:start}
+  .cases h2,.how h2,.faq h2{font-size:clamp(52px,15vw,96px)}
+}
+@media (max-width:560px){
+  
+  
+  
+  .proc ol{grid-template-columns:1fr}
+  
+  
+  
+  .faq summary{padding:18px}.faq details p{padding:0 18px 18px}
+}
+.menu nav a{font-size:clamp(30px,min(9vw,calc((100vh - 150px)/9.2)),140px);white-space:nowrap}
+@supports (height:100svh){.menu nav a{font-size:clamp(30px,min(9vw,calc((100svh - 150px)/9.2)),140px)}}
+.menu nav a:nth-child(6) span{transition-delay:.25s}.menu nav a:nth-child(7) span{transition-delay:.3s}.menu nav a:nth-child(8) span{transition-delay:.35s}.menu nav a:nth-child(9) span{transition-delay:.4s}.menu nav a:nth-child(10) span{transition-delay:.45s}
+
+.csg{max-width:1840px;margin:0 auto;padding:0 var(--pad);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.6vw,24px)}
+.csc{display:flex;flex-direction:column;gap:14px;text-decoration:none;color:inherit;padding:12px 12px 20px;border-radius:26px;background:var(--glass);box-shadow:var(--glass-edge),var(--glass-drop);-webkit-backdrop-filter:blur(18px) saturate(140%);backdrop-filter:blur(18px) saturate(140%);transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .35s ease}
+.csc:hover{transform:translateY(-6px)}
+.csc-m{position:relative;aspect-ratio:16/11;border-radius:16px;overflow:hidden;background:#0b0b0b}
+.csc-m img,.csc-m video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .4s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
+.csc-m video{opacity:0}
+.csc.playing .csc-m video{opacity:1}
+.csc:hover .csc-m img{transform:scale(1.04)}
+.csc-t{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:6px 8px 0;flex-wrap:wrap}
+.csc-t h3{margin:0;font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(32px,2.6vw,46px);line-height:.9}
+.csc-t span{font-size:13px;color:var(--muted)}
+.csc p{margin:0;padding:0 8px;font-size:15px;line-height:1.5;color:#D2D3CB}
+.csc-go{margin-top:auto;padding:6px 8px 0;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--sky)}
+.csc-go svg{transition:transform .35s ease}.csc:hover .csc-go svg{transform:translateX(4px)}
+@media (max-width:1100px){.csg{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.csg{grid-template-columns:1fr}}
+@media (max-width:640px){.lineup h2 span,.clients h2 span,.reviews h2 span,.book h2 span,.how h2 span,.faq h2 span,.cases h2 span{white-space:nowrap}
+.lineup h2,.clients h2,.reviews h2,.book h2,.how h2,.faq h2,.cases h2{font-size:clamp(40px,13.5vw,96px)}}
+
+/* ===== numbers ===== */
+.numbers{position:relative;padding:clamp(30px,6vh,70px) var(--pad) clamp(80px,12vh,130px)}
+.numbers .wrap{max-width:1840px;margin:0 auto}
+.num-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(12px,1.4vw,20px)}
+.num{position:relative;padding:clamp(22px,2.4vw,36px);border-radius:24px;background:var(--glass);box-shadow:var(--glass-edge),var(--glass-drop);-webkit-backdrop-filter:blur(18px) saturate(140%);backdrop-filter:blur(18px) saturate(140%);display:flex;flex-direction:column;gap:10px;min-height:clamp(170px,20vw,250px);justify-content:space-between}
+.num b{font-family:var(--display);font-weight:900;font-size:clamp(64px,8.4vw,138px);line-height:.8;letter-spacing:-.01em;color:var(--ink)}
+.num b sup{font-size:.42em;vertical-align:top;position:relative;top:.12em;color:var(--sky);margin-left:2px}
+.num b .cur{font-size:.5em;vertical-align:top;position:relative;top:.1em;color:var(--sky);margin-right:2px}
+.num>span{font-size:clamp(14px,1.1vw,17px);line-height:1.4;color:var(--muted);max-width:22ch}
+.num>span strong{display:block;color:var(--ink);font-weight:600;font-size:clamp(16px,1.25vw,19px);margin-bottom:2px}
+.num.hl{background:linear-gradient(140deg,rgba(120,205,255,.26) 0%,rgba(79,184,242,.09) 45%,rgba(255,255,255,.03) 100%)}
+
+
+
+
+
+
+
+@media (max-width:1100px){  .num-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:900px){  }
+@media (max-width:560px){  .num-grid{gap:10px}
+  .num{min-height:150px;padding:18px;border-radius:20px}
+  .num b{font-size:clamp(54px,17vw,76px)}
+  .num>span{font-size:13px}.num>span strong{font-size:15px}}
+
+
+.proof{margin-top:clamp(12px,1.4vw,20px);display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:clamp(20px,3vw,48px);padding:clamp(24px,2.6vw,40px);border-radius:24px;background:var(--glass);box-shadow:var(--glass-edge),var(--glass-drop);-webkit-backdrop-filter:blur(18px) saturate(140%);backdrop-filter:blur(18px) saturate(140%)}
+.proof figure{margin:0}
+.proof q{display:block;font-size:clamp(20px,1.9vw,30px);line-height:1.3;letter-spacing:-.015em;font-weight:500;color:var(--ink);max-width:40ch;quotes:"\201C" "\201D"}
+.proof figcaption{margin-top:12px;font-size:15px;color:var(--muted)}
+.proof-cta{display:flex;flex-direction:column;align-items:flex-end;gap:14px}
+.proof-cta span{font-size:15px;font-weight:500;color:#CFD0C8}
+@media (max-width:900px){.proof{grid-template-columns:1fr}.proof-cta{align-items:flex-start}}
 </style>
 </head>
 <body>
@@ -828,9 +1007,12 @@ img,video,canvas{max-width:100%}
   <nav aria-label="Site">
     <a href="#top"><span>Home</span></a>
     <a href="#work"><span>Work</span></a>
+    <a href="#cases"><span>Cases</span></a>
     <a href="#services"><span>Services</span></a>
+    <a href="#pricing"><span>Pricing</span></a>
     <a href="#clients"><span>Clients</span></a>
     <a href="#testimonials"><span>Reviews</span></a>
+    <a href="#faq"><span>FAQ</span></a>
     <a href="#book"><span>Book a call</span></a>
     <a href="#contact"><span>Contact</span></a>
   </nav>
@@ -871,6 +1053,22 @@ img,video,canvas{max-width:100%}
       <div class="from"><i></i>A note from Caesar<i></i></div>
       <p class="big">I <mark>build</mark> websites that move, shape <mark>brands</mark> people remember, and sweat every <mark>detail</mark> from the first frame to the last pixel.</p>
       <div class="sig" id="sig1" aria-hidden="true">Caesar</div>
+    </div>
+  </section>
+
+<!-- NUMBERS -->
+  <section class="numbers" id="numbers" aria-label="At a glance">
+    <div class="wrap">
+      <div class="num-grid">
+        <div class="num rv"><b><span data-count="60">60</span><sup>+</sup></b><span><strong>Projects delivered</strong>Websites, brands, motion and design work</span></div>
+        <div class="num rv"><b><span data-count="5">5</span><sup>+</sup></b><span><strong>Years of experience</strong>Designing and building for clients</span></div>
+        <div class="num rv"><b><span data-count="7">7</span></b><span><strong>Services, one person</strong>From websites to brand identity and AI ads</span></div>
+        <a class="num hl rv" href="#pricing" style="text-decoration:none;color:inherit"><b><span class="cur">$</span><span data-count="500">500</span></b><span><strong>Starting price</strong>For a website. See what&rsquo;s included &rarr;</span></a>
+      </div>
+      <div class="proof rv">
+        <figure><q>So far I have gotten more customers to my business and my website looks really amazing.</q><figcaption>Mary Obianuju, OAP at Cool FM</figcaption></figure>
+        <div class="proof-cta"><span>Available for new projects</span><a class="btn" href="#cases">See the case studies</a></div>
+      </div>
     </div>
   </section>
 
@@ -934,6 +1132,52 @@ img,video,canvas{max-width:100%}
     <div class="count" aria-hidden="true"><span>Selected work</span><span class="prog"><i id="prog"></i></span></div>
   </section>
 
+  <!-- CASE STUDIES -->
+  <section class="cases" id="cases" aria-label="Case studies">
+    <div class="orbs" aria-hidden="true"><i class="o1" style="background:#4FB8F2"></i><i class="o2" style="background:#E2B55A"></i><i class="o3" style="background:#3A5BFF"></i></div>
+    <div class="head">
+      <h2 class="display"><span>The proof</span><span>is live</span></h2>
+    </div>
+    <div class="csg">
+      <a class="csc rv" href="work/findrio.html">
+        <div class="csc-m"><img src="assets/img-08-2bb321.jpg" alt="" loading="lazy"><video data-src="assets/video-01-ea3116.mp4" muted loop playsinline preload="none" aria-hidden="true"></video></div>
+        <div class="csc-t"><h3>Findrio</h3><span>AI visibility platform · Client</span></div>
+        <p>Rebuilt in Framer for a startup tracking brands in AI search.</p>
+        <span class="csc-go">Read the case study <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a class="csc rv" href="work/sandra.html">
+        <div class="csc-m"><img src="assets/img-10-103c03.jpg" alt="" loading="lazy"><video data-src="assets/video-03-42501f.mp4" muted loop playsinline preload="none" aria-hidden="true"></video></div>
+        <div class="csc-t"><h3>Sandra ESQ</h3><span>Law practice · Client</span></div>
+        <p>A website and launch reel for a lawyer clients can trust on sight.</p>
+        <span class="csc-go">Read the case study <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a class="csc rv" href="work/cadillacs.html">
+        <div class="csc-m"><img src="assets/cadillacs-reel.jpg" alt="" loading="lazy"><video data-src="assets/cadillacs-reel.mp4" muted loop playsinline preload="none" aria-hidden="true"></video></div>
+        <div class="csc-t"><h3>The Cadillacs</h3><span>Brand identity · Client</span></div>
+        <p>One blurry logo turned into a brand and ten LinkedIn animations.</p>
+        <span class="csc-go">Read the case study <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a class="csc rv" href="work/arcen.html">
+        <div class="csc-m"><img src="assets/img-13-23bdb1.jpg" alt="" loading="lazy"><video data-src="assets/video-06-21724f.mp4" muted loop playsinline preload="none" aria-hidden="true"></video></div>
+        <div class="csc-t"><h3>Arcen</h3><span>Furniture store · Own brand</span></div>
+        <p>A hand-coded five-page store that makes chairs feel touchable.</p>
+        <span class="csc-go">Read the case study <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a class="csc rv" href="work/mercoram.html">
+        <div class="csc-m"><img src="assets/img-15-537a21.jpg" alt="" loading="lazy"><video data-src="assets/video-08-f91bf2.mp4" muted loop playsinline preload="none" aria-hidden="true"></video></div>
+        <div class="csc-t"><h3>Mercoram</h3><span>Job-hunt SaaS · Product concept</span></div>
+        <p>A product site that turns a job hunt into a pipeline.</p>
+        <span class="csc-go">Read the case study <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a class="csc rv" href="work/moniepoint.html">
+        <div class="csc-m"><img src="assets/img-14-24d221.jpg" alt="" loading="lazy"><video data-src="assets/video-07-c8cadf.mp4" muted loop playsinline preload="none" aria-hidden="true"></video></div>
+        <div class="csc-t"><h3>Moniepoint</h3><span>Fintech · Concept</span></div>
+        <p>A banking site told through classical paintings and gold.</p>
+        <span class="csc-go">Read the case study <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+    </div>
+  </section>
+
   <!-- SPLIT -->
   <section class="split duo2" id="split" aria-label="What I do">
     <div class="fig face" aria-hidden="true"><img src="assets/img-16-06ab5d.webp" alt=""></div>
@@ -956,11 +1200,45 @@ img,video,canvas{max-width:100%}
   <section class="lineup" id="services" aria-label="Services">
     <div class="orbs" aria-hidden="true"><i class="o1" style="background:#E2B55A"></i><i class="o2" style="background:#4FB8F2"></i><i class="o3" style="background:#E2B55A"></i></div>
     <div class="head">
-      <h2 class="display"><span>The</span><span>Line-up</span></h2>
-      <p>Seven ways I can help. Hover to pause the line, or drag it along.</p>
+      <h2 class="display"><span>Every skill</span><span>you need</span></h2>
     </div>
     <div class="rail" id="rail" tabindex="0" aria-label="Services ticker: drag or scroll sideways, hover to pause"></div>
     <div class="more"><span>Need something that isn’t here?</span><a class="btn" href="#book">Ask me</a></div>
+  </section>
+
+  <!-- HOW I WORK: PRICING, PROCESS, TOOLS -->
+  <section class="how" id="pricing" aria-label="Pricing and process">
+    <div class="orbs" aria-hidden="true"><i class="o1" style="background:#4FB8F2"></i><i class="o2" style="background:#8A5CFF"></i><i class="o3" style="background:#E2B55A"></i></div>
+    <div class="head">
+      <h2 class="display"><span>Fair price.</span><span>Clear plan.</span></h2>
+    </div>
+    <div class="how-grid">
+      <div class="price rv">
+        <p class="amt"><small>Websites from</small><sup>$</sup>500</p>
+        <ul>
+          <li>Custom design made for your brand, no templates</li>
+          <li>Responsive on phones, tablets and desktops</li>
+          <li>Motion and interactions that make it feel alive</li>
+          <li>SEO basics: page titles, descriptions and share previews</li>
+          <li>Launched on your domain, built in code or Framer</li>
+        </ul>
+        <p class="also">The final price depends on pages, features and content, and you get a fixed quote after a project call. <b>Brand identity, motion, AI ads, social content and 3D</b> are quoted per project.</p>
+        <div class="btns"><a class="btn" href="#book">Get a quote</a><a class="btn line" href="https://contra.com/michaelcaesar360_01qebx1b" target="_blank" rel="noopener">Hire on Contra</a></div>
+      </div>
+      <div class="proc rv">
+        <ol>
+          <li><b>01</b><strong>Discover</strong><span>A call to pin down your goals, audience, scope and budget. You leave with a plan and a quote.</span></li>
+          <li><b>02</b><strong>Design</strong><span>The look and feel, shared early in Figma or Framer so you can steer it before anything is built.</span></li>
+          <li><b>03</b><strong>Build</strong><span>Hand-coded or built in Framer, with motion, speed and every screen size checked on real devices.</span></li>
+          <li><b>04</b><strong>Launch &amp; support</strong><span>Live on your domain, handed over with everything you need, and I stay on hand for updates.</span></li>
+        </ol>
+        <div class="tools">
+          <h3>Tools</h3>
+          <div class="chips"><span>Figma</span><span>Framer</span><span>HTML, CSS &amp; JavaScript</span><span>Three.js &amp; WebGL</span><span>Canvas API</span><span>Vercel &amp; Netlify</span><span>GitHub</span><span>AI video tools</span></div>
+        </div>
+        <p class="tz"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Based in Nigeria on West Africa Time (GMT+1): a full working day of overlap with the UK and Europe, and mornings with the US.</p>
+      </div>
+    </div>
   </section>
 
   <!-- BOOKING -->
@@ -981,8 +1259,7 @@ img,video,canvas{max-width:100%}
   <!-- CLIENTS -->
   <section class="clients" id="clients" aria-label="Clients and collaborators">
     <div class="head">
-      <h2 class="display"><span>Clients</span><span>&amp; collabs</span></h2>
-      <p>Founders, law firms, bands and networks I’ve built for.</p>
+      <h2 class="display"><span>Trusted by</span><span>builders</span></h2>
     </div>
     <div class="marquee" aria-label="Client list">
       <div class="row">
@@ -994,36 +1271,50 @@ img,video,canvas{max-width:100%}
   <section class="reviews" id="testimonials" aria-label="Testimonials">
     <div class="orbs" aria-hidden="true"><i class="o1" style="background:#4FB8F2"></i><i class="o2" style="background:#E2B55A"></i><i class="o3" style="background:#3A5BFF"></i></div>
     <div class="head">
-      <h2 class="display"><span>Kind</span><span>words</span></h2>
-      <div class="side-cta"><p>What clients say after working with me.</p><a class="btn" href="#book">Work with me</a></div>
+      <h2 class="display"><span>Don&rsquo;t take</span><span>my word</span></h2>
+      <div class="side-cta"><a class="btn" href="#book">Work with me</a></div>
     </div>
     <div class="rev-grid">
         <figure class="rev">
           <span class="q" aria-hidden="true">&ldquo;</span>
           <blockquote>Awesome work, easy to communicate and understands the needs of client. Hired Michael for a professional Landing Page update. Recommend!</blockquote>
-          <figcaption><span class="av" aria-hidden="true">M</span><span class="who"><b>Mantas Mantas</b><span>Landing page update</span></span></figcaption>
+          <figcaption><span class="av" aria-hidden="true">M</span><span class="who"><b>Mantas</b><span>CEO, Findrio</span></span></figcaption>
         </figure>
         <figure class="rev">
           <span class="q" aria-hidden="true">&ldquo;</span>
           <blockquote>I hired Michael to do a full rebrand of my business starting with my website and he did a wonderful job, so far I have gotten more customers to my business and my website looks really amazing. Thank you once again Michael.</blockquote>
-          <figcaption><span class="av" aria-hidden="true">M</span><span class="who"><b>Mary Obianuju</b><span>Rebrand and website</span></span></figcaption>
+          <figcaption><span class="av" aria-hidden="true">M</span><span class="who"><b>Mary Obianuju</b><span>OAP, Cool FM</span></span></figcaption>
         </figure>
         <figure class="rev">
           <span class="q" aria-hidden="true">&ldquo;</span>
           <blockquote>Our company needed to develop a mobile app for workers in fields to facilitate production and I reached to Michael for an app design and he did a spectacular work. The app was clean and effective. Working with him was great and his availability was superb.</blockquote>
-          <figcaption><span class="av" aria-hidden="true">A</span><span class="who"><b>Ayomide</b><span>Mobile app design</span></span></figcaption>
+          <figcaption><span class="av" aria-hidden="true">A</span><span class="who"><b>Ayomide</b><span>Soil engineer, Soiless Labs</span></span></figcaption>
         </figure>
         <figure class="rev">
           <span class="q" aria-hidden="true">&ldquo;</span>
           <blockquote>Working with Michael was absolutely amazing, he designed a really cool and interactive website for my brand which was engaging for most of my customers and really helped my business. I will definitely recommend him to work with.</blockquote>
-          <figcaption><span class="av" aria-hidden="true">A</span><span class="who"><b>Ayodele</b><span>Interactive brand website</span></span></figcaption>
+          <figcaption><span class="av" aria-hidden="true">A</span><span class="who"><b>Ayodele</b><span>CEO, Wrex Studios</span></span></figcaption>
         </figure>
+    </div>
+  </section>
+  <!-- FAQ -->
+  <section class="faq" id="faq" aria-label="Frequently asked questions">
+    <div class="head">
+      <h2 class="display"><span>Before</span><span>you ask</span></h2>
+    </div>
+    <div class="faq-list">
+      <details class="rv"><summary>How much does a website cost?<i aria-hidden="true"></i></summary><p>Websites start from $500. The final price depends on the number of pages, features and how much content needs creating. After a project call you get a fixed quote, so there are no surprises.</p></details>
+      <details class="rv"><summary>How long does a project take?<i aria-hidden="true"></i></summary><p>It depends on the scope. You get a timeline with your quote, and I share progress as I go so you always know where things stand.</p></details>
+      <details class="rv"><summary>Do you build in code or in Framer?<i aria-hidden="true"></i></summary><p>Both. Framer is great when you want to edit pages yourself. Hand-coded builds suit custom 3D, WebGL and heavy interaction. I&rsquo;ll recommend whichever fits your project.</p></details>
+      <details class="rv"><summary>Can you work with my time zone?<i aria-hidden="true"></i></summary><p>Yes. I&rsquo;m on West Africa Time (GMT+1), which overlaps a full working day with the UK and Europe and the morning with the US. My calendar shows call times in your own time zone.</p></details>
+      <details class="rv"><summary>What do you need from me to start?<i aria-hidden="true"></i></summary><p>Your goals, who the site is for, any brand assets you already have, and a few sites you like. If you don&rsquo;t have a brand yet, I can design one with you.</p></details>
+      <details class="rv"><summary>What happens after launch?<i aria-hidden="true"></i></summary><p>You get everything handed over and a walkthrough of how to update your site. I&rsquo;m available for changes, new pages and features whenever you need them.</p></details>
     </div>
   </section>
   <section class="book" id="book" aria-label="Book a call">
     <div class="orbs" aria-hidden="true"><i class="o1" style="background:#E2B55A"></i><i class="o2" style="background:#4FB8F2"></i><i class="o3" style="background:#8A5CFF"></i></div>
     <div class="head">
-      <h2 class="display"><span>Book</span><span>a call</span></h2>
+      <h2 class="display"><span>Let&rsquo;s build</span><span>yours next</span></h2>
       <p>Pick the call that fits and choose a time straight from my calendar. I&rsquo;m on West Africa Time (GMT+1), and it shows slots in your own time zone.</p>
     </div>
     <div class="book-grid">
@@ -1057,7 +1348,7 @@ img,video,canvas{max-width:100%}
     <div class="helm-big statue-big" aria-hidden="true"><img alt=""></div>
   </div>
   <div class="cols">
-    <div><h3>Pages</h3><ul><li><a href="#top">Home</a></li><li><a href="#work">Work</a></li><li><a href="#services">Services</a></li><li><a href="#clients">Clients</a></li></ul></div>
+    <div><h3>Pages</h3><ul><li><a href="#top">Home</a></li><li><a href="#work">Work</a></li><li><a href="#cases">Case studies</a></li><li><a href="#services">Services</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#faq">FAQ</a></li></ul></div>
     <div><h3>Follow</h3><div class="soc-row"><a class="sicon" href="https://github.com/micolo360" data-net="github" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><img src="assets/img-01-72a3a4.png" data-still="assets/img-01-72a3a4.png" data-anim="assets/img-02-b5fc2f.gif" alt="" width="56" height="56"></a><a class="sicon" href="#" data-net="instagram" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><img src="assets/img-03-a0ea25.png" data-still="assets/img-03-a0ea25.png" data-anim="assets/img-04-e60931.gif" alt="" width="56" height="56"></a><a class="sicon" href="https://www.linkedin.com/in/josephmichaelcaesar" data-net="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><img src="assets/img-05-22858b.png" data-still="assets/img-05-22858b.png" data-anim="assets/img-06-ddb23b.gif" alt="" width="56" height="56"></a><a class="sicon svgi" href="https://x.com/Caesargives" data-net="x" target="_blank" rel="noopener" aria-label="X" title="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="d1" d="M5.5 5 L18.5 19" stroke="#0F1419" stroke-width="2.6" stroke-linecap="round" fill="none"/><path class="d2" d="M18.5 5 L5.5 19" stroke="#0F1419" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg></a><a class="sicon svgi" href="https://www.threads.com/@josephoparaku" data-net="threads" target="_blank" rel="noopener" aria-label="Threads" title="Threads"><svg viewBox="0 0 24 24" aria-hidden="true"><g class="spin"><path d="M16.6 11.2c-.2-2.6-1.8-4-4.3-4-1.6 0-2.9.7-3.6 1.9M15.9 11.5c-2.6-.6-6 .1-5.9 2.3.1 1.5 1.6 2.2 3.1 2.1 2.6-.2 3.5-2.3 3.4-4.8 2 .8 2.8 2.4 2.1 4.2-1 2.6-3.4 3.7-6.4 3.6-4-.1-6.3-2.6-6.3-6.9S6.1 5.1 10.6 5c4.1-.1 6.8 1.9 7.6 5.2" fill="none" stroke="#000" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></g></svg></a><a class="sicon svgi" href="https://substack.com/@michaelcaesar" data-net="substack" target="_blank" rel="noopener" aria-label="Substack" title="Substack"><svg viewBox="0 0 24 24" aria-hidden="true"><rect class="b1" x="5.5" y="4.5" width="13" height="2.2" fill="#FF6719"/><rect class="b2" x="5.5" y="8.6" width="13" height="2.2" fill="#FF6719"/><path class="b3" d="M5.5 12.7 H18.5 V20 L12 16.4 L5.5 20 Z" fill="#FF6719"/></svg></a><a class="sicon svgi" href="https://www.upwork.com/freelancers/~01e6810c62727ad12a" data-net="upwork" target="_blank" rel="noopener" aria-label="Upwork" title="Upwork"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5.5" fill="#14A800"/><g class="pop" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7.5v4.6a2.6 2.6 0 0 0 5.2 0V7.5"/><path d="M13 19V7.6"/><path d="M13 12.4a3 3 0 1 0 3-3.4c-1.9 0-2.6 1.6-3 3.4"/></g></svg></a><a class="sicon svgi" href="https://contra.com/michaelcaesar360_01qebx1b" data-net="contra" target="_blank" rel="noopener" aria-label="Contra" title="Contra"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5.5" fill="#0B0B0B"/><path class="arc" d="M16.4 8.4A5.6 5.6 0 1 0 16.4 15.6" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/><circle cx="17.2" cy="12" r="1.6" fill="#fff"/></svg></a></div></div>
     <div><h3>Services</h3><ul><li><a href="#services">Websites &amp; Apps</a></li><li><a href="#services">Branding</a></li><li><a href="#services">Motion</a></li><li><a href="#services">3D and WebGL</a></li><li><a href="#services">AI ads</a></li></ul></div>
     <div><h3>Project enquiries</h3><a class="mail" href="mailto:michaelcaesar360@gmail.com">michaelcaesar360@gmail.com</a></div>
@@ -1642,6 +1933,25 @@ window.__glDraw=(function(){let R=null,BW=0,BH=0;
   const seen=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting){if(!v.getAttribute('src'))v.src=v.dataset.src;const p=v.play();p&&p.catch&&p.catch(()=>{});}else v.pause();}),{threshold:.15});
   vids.forEach(v=>{near.observe(v);seen.observe(v);});
   document.addEventListener('visibilitychange',()=>{if(document.hidden)vids.forEach(v=>v.pause());});})();
+</script>
+<script>
+/* ---------- case study cards: preview video on hover ---------- */
+(function(){
+  if(!matchMedia('(hover:hover) and (pointer:fine)').matches)return;
+  document.querySelectorAll('.csc').forEach(c=>{const v=c.querySelector('video');
+    c.addEventListener('pointerenter',()=>{if(!v.src)v.src=v.dataset.src;v.play().then(()=>c.classList.add('playing')).catch(()=>{});});
+    c.addEventListener('pointerleave',()=>{v.pause();c.classList.remove('playing');});});
+})();
+/* ---------- reveals and counters ---------- */
+(function(){
+  const still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const io=new IntersectionObserver(es=>es.forEach(en=>{if(!en.isIntersecting)return;const el=en.target;io.unobserve(el);
+    const sib=[...el.parentElement.children].filter(x=>x.classList.contains('rv'));el.style.transitionDelay=(Math.max(0,sib.indexOf(el))*0.08)+'s';el.classList.add('in');
+    el.querySelectorAll('[data-count]').forEach(n=>{const to=+n.dataset.count;if(still)return;const t0=performance.now(),dur=1400;
+      (function step(t){const p=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-p,3);n.textContent=Math.round(to*e);if(p<1)requestAnimationFrame(step);})(t0);});
+  }),{threshold:.2,rootMargin:'0px 0px -6% 0px'});
+  document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+})();
 </script>
 </body>
 </html>
